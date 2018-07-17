@@ -1,0 +1,64 @@
+  - platform: systemmonitor
+    resources:
+      - type: processor_use
+      - type: memory_use
+      - type: load_15m
+      - type: since_last_boot
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'time_utc'
+  - platform: wunderground
+    api_key: a0a92d34c1e98977
+    lang: PL
+    monitored_conditions:
+      - temp_high_1d_c
+      - temp_c
+      - temp_low_1d_c
+      - precip_1d
+      - precip_1d_mm
+      - wind_kph
+      - wind_1d_kph
+      - weather_1d_metric
+      - weather_1n_metric
+      - weather_2d_metric
+      - weather_2n_metric
+      - weather_3d_metric
+      - weather_3n_metric
+      - weather_4d_metric
+      - weather_4n_metric
+  - platform: mqtt
+    name: "Salon temp wewn"
+    state_topic: sensor/livingroomTempIn
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    name: "Salon temp zewn"
+    state_topic: sensor/livingroomTempOut
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    name: "Salon wilgotność"
+    state_topic: sensor/livingroomHumidity
+    unit_of_measurement: "%"
+  - platform: mqtt
+    name: "Garderoba temp"
+    state_topic: sensor/wardrobeTempIn
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    name: "Garderoba wilgotność"
+    state_topic: sensor/wardrobeHumidity
+    unit_of_measurement: "%"
+  - platform: mqtt
+    name: "Kuchnia temp wewn"
+    state_topic: sensor/kitchenTempIn
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    name: "Kuchnia temp zewn"
+    state_topic: sensor/kitchenTempOut
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    name: "Kuchnia wilgotność"
+    state_topic: sensor/kitchenHumidity
+    unit_of_measurement: "%"
+ 
+

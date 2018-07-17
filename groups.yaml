@@ -1,0 +1,53 @@
+  salon:
+    name: Salon
+    entities:
+      - sensor.salon_temp_wewn
+      - sensor.salon_wilgotnosc
+      - sensor.salon_temp_zewn
+  kuchnia:
+    name: Kuchnia
+    entities:
+      - sensor.kuchnia_temp_wewn
+      - sensor.kuchnia_wilgotnosc
+      - sensor.kuchnia_temp_zewn
+  garderoba:
+    name: Garderoba
+    entities:
+      - sensor.garderoba_temp
+      - sensor.garderoba_wilgotnosc
+  system:
+    name: System
+    entities:
+      - sensor.cpu_use
+      - sensor.average_load_15m
+      - sensor.ram_use
+      - sensor.since_last_boot
+  time:
+    name: Zegar
+    entities:
+      - sensor.time
+      - sensor.time_utc
+      - sensor.date
+      - sun.sun
+  weather_overview:
+    name: Pogoda
+    entities:
+      - sensor.pws_weather_1d_metric
+      - sensor.pws_temp_high_1d_c
+      - sensor.pws_temp_c
+      - sensor.pws_temp_low_1d_c
+      - sensor.pws_precip_1d
+      - sensor.pws_precip_1d_mm
+      - sensor.pws_wind_kph
+      - sensor.pws_wind_1d_kph
+  daily_forecast:
+    name: Prognoza pogody
+    entities:
+      - sensor.pws_weather_1d_metric
+      - sensor.pws_weather_1n_metric
+      - sensor.pws_weather_2d_metric
+      - sensor.pws_weather_2n_metric
+      - sensor.pws_weather_3d_metric
+      - sensor.pws_weather_3n_metric
+      - sensor.pws_weather_4d_metric
+      - sensor.pws_weather_4n_metric
