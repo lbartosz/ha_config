@@ -58,6 +58,9 @@ tts:
 mqtt:
   broker: 127.0.0.1
   port: 1883
+  client_id: hass_hub
+  username: !secret mqtt_username
+  password: !secret mqtt_password
 
 
 sensor: !include sensors.yaml
