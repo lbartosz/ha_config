@@ -1,0 +1,83 @@
+views:
+  - title: main
+    icon: mdi:home-outline
+    cards:  
+      - type: glance
+        title: Warunki zewnetrzne
+        entities:
+          - entity: sensor.salon_temp_zewn
+            name: Salon
+            icon: mdi:thermometer
+          - entity: sensor.kuchnia_temp_zewn
+            icon: mdi:thermometer
+            name: Kuchnia
+      - type: glance
+        title: Warunki wewnetrzne
+        entities:
+          - entity: sensor.salon_temp_wewn
+            name: Salon
+            icon: mdi:thermometer
+          - entity: sensor.kuchnia_temp_wewn
+            icon: mdi:thermometer
+            name: Kuchnia
+          - entity: sensor.garderoba_temp
+            icon: mdi:thermometer
+            name: Kuchnia
+          - entity: sensor.kuchnia_wilgotnosc
+            icon: mdi:water-percent
+            name: Kuchnia
+          - entity: sensor.salon_wilgotnosc
+            icon: mdi:water-percent
+            name: Salon
+  - title: Szczegoly
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+               ## Temperatura zewnetrzne
+          - type: sensor
+            entity: sensor.salon_temp_zewn
+            name: Salon
+            graph: line
+            detail: 2
+          - type: sensor
+            entity: sensor.kuchnia_temp_zewn
+            name: Kuchnia
+            graph: line
+            detail: 2
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+               ## Wilgotnosc wewnetrzna
+          - type: sensor
+            entity: sensor.salon_wilgotnosc
+            name: Salon
+            graph: line
+            detail: 2
+          - type: sensor
+            entity: sensor.kuchnia_wilgotnosc
+            name: Kuchnia
+            graph: line
+            detail: 2
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+               ## Temperatura wewnetrzne
+          - type: sensor
+            entity: sensor.salon_temp_wewn
+            name: Salon
+            graph: line
+            detail: 2
+          - type: sensor
+            entity: sensor.kuchnia_temp_wewn
+            name: Kuchnia
+            graph: line
+            detail: 2
+          - type: sensor
+            entity: sensor.garderoba_temp
+            name: Garderoba
+            graph: line
+            detail: 2
