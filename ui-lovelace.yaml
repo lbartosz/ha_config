@@ -22,7 +22,7 @@ views:
             name: Kuchnia
           - entity: sensor.garderoba_temp
             icon: mdi:thermometer
-            name: Kuchnia
+            name: Garderoba
           - entity: sensor.kuchnia_wilgotnosc
             icon: mdi:water-percent
             name: Kuchnia
@@ -81,3 +81,11 @@ views:
             name: Garderoba
             graph: line
             detail: 2
+  - title: Testy
+    cards:
+      - type: entities
+        show_header_toggle: false
+        title: Proba
+        entities:
+          - entity: switch.knefel
+            type: switch

@@ -1,0 +1,17 @@
+  - platform: mqtt
+    name: "TestSwitch"
+    state_topic: "test/switch/status"
+    command_topic: "test/switch/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: true
+  - platform: mqtt
+    name: "knefel"
+    state_topic: "test/knefel/status"
+    command_topic: "test/knefel/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"

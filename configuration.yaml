@@ -70,3 +70,5 @@ recorder:
 sensor: !include sensors.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
+switch: !include switch.yaml
+
