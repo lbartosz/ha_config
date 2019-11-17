@@ -64,6 +64,3 @@
     name: "Test Xiaomi"
     state_topic: zigbee2mqtt/0x00158d000321e436
     unit_of_measurement: "ºC"
-
- 
-
